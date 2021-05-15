@@ -26,27 +26,40 @@
         <div class="search">
             <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
             <button class="btn srchbtn" type="submit"><i class="fa fa-search srchicon"></i></button>
+
  
+            <span id="span-item" >
+                <a class="btn" href="">Books</a>
+                <a class="btn" href="Upload.html">Upload</a>
+            </span>
         </div>
-        <div class="user">
-            <a class="nav-link" style="color: #fff">
-            <i class="fa fa-user-circle usericon">
+        <div class="user">            
+            <i class="fa fa-user-circle usericon " style="color: #fff">
                 <ul>
                 <li><a  href="{% url 'register'  %}">signup</a></li>
-          {%if user.is_authenticated%}
-          <li><a  href="{% url 'logout'  %}">logout</a></li>
-          {%else%}
+                        <!-- {%if user.is_authenticated%} -->
+                <li><a  href="{% url 'logout'  %}">logout</a></li>
+                        <!-- {%else%} -->
                 <li><a  href="{% url 'login'  %}">signin</a></li>
-          {%endif%}
+                        <!-- {%endif%} -->
                 </ul>
-            </i></a>
+            
+            </i>            
         </div>
     </nav>			
 </header>
 
 
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <section id="sec5">
